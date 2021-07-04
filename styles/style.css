@@ -1,0 +1,65 @@
+body {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #222;
+}
+
+header {
+    font-family: Roboto, Open+Sans, arial, sans-serif;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+#linkAbout {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+#linkStore {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.rightContainer {
+    font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+    color: rgba(0,0,0,0.87);
+    display: flex;
+    height: 48px;
+    flex-grow: 1;
+    display: inline-block;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.rightLinks {
+    white-space: nowrap;
+    -moz-box-align: center;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    height: 48px;
+    line-height: normal;
+    float: right;
+}
+
+#linkGmail {
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+    padding-left: 15px;
+}
+
+#linkImages {
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+    padding-left: 15px;
+}
+
+
