@@ -1,22 +1,18 @@
 body {
     background: #fff;
-}
-
-body, input, button {
     font-size: 14px;
     font-family: arial,sans-serif;
     color: #222;
-}
-
-
-html, body {
     min-width: 400px;
-}
-
-body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+.body--container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 header {
@@ -213,6 +209,14 @@ a {
     position: relative;
 }
 
+.google-logo {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+}
+
 .search {
     flex-shrink: 0;
     box-sizing: border-box;
@@ -280,6 +284,14 @@ a {
     display: block;
     height: 100%;
     width: 100%;
+}
+
+
+
+.section-bottom-half {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    flex-grow: 1;
 }
 
 

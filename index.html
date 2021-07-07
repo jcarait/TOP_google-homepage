@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +8,7 @@
 </head>
 
 <body>
-    <div class="entirePage">
+    <div class="body--container">
         <header>
             <a class="linkAbout" href="#">About</a>
             <a class="linkStore" href="#">Store</a>
@@ -48,7 +47,8 @@
         </header>
         <div class="midLogoSection maxMidHeight minMidHeight midItems">
             <div class="midLogoCenter">
-                <img src="images/googlelogo_color_272x92dp.png" alt="Google" width="272" height="92">
+                <img class="google-logo" src="images/googlelogo_color_272x92dp.png" alt="Google" width="272"
+                    height="92">
             </div>
         </div>
         <div class="search">
@@ -58,7 +58,8 @@
                         <div class="search-icon--container">
                             <div class="search-icon--border">
                                 <span class="search-icon--elem">
-                                    <svg class="search-icon--svg" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <svg class="search-icon--svg" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
                                         <path
                                             d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
                                         </path>
@@ -68,7 +69,10 @@
                             </div>
                         </div>
                         <div class="search-form--container">
-                            <div class="search-form__input">
+                            <div class="search-form--elem">
+                                <input class="search-form__input" maxlength="2048" name="q" type="text"
+                                    autocapitalize="none" autocomplete="off" autocorrect="off" autofocus=""
+                                    role="combobox" spellcheck="false" title="Search" value="">
 
                             </div>
                         </div>
@@ -78,14 +82,9 @@
 
             </div>
         </div>
-
+        <div class="section-bottom-half">
+        </div>
     </div>
-
-    </div>
-
-    </div>
-    </div>
-
 
 </body>
 
