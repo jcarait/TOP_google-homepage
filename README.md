@@ -1,2 +1,3 @@
 # google-homepage
-Deconstruct and rebuild of Google homepage from The Odin Project
+The Odin Project
+The Front End - Project: Google Homepage
