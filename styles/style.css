@@ -1,12 +1,18 @@
+html, body {
+    min-width: 400px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: #fff;
     font-size: 14px;
     font-family: arial,sans-serif;
     color: #222;
-    min-width: 400px;
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .body--container {
@@ -242,6 +248,10 @@ a {
     margin: 0 auto;
     width: auto;
     max-width: 584px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-color: rgba(223,225,229,0);
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
 }
 
 .search-textbox--border {
@@ -255,13 +265,7 @@ a {
     display: flex;
     align-items: center;
     padding-right: 13px;
-    margin-top: 5px;
-}
-
-.search-form--container {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
+    margin-top: -5px;
 }
 
 .search-icon--border {
@@ -269,13 +273,12 @@ a {
 }
 
 .search-icon--elem {
+    display: inline-block;
     fill: currentColor;
     line-height: 24px;
-    color: #9aa0a6;
-    display: block;
-    height: 100%;
-    width: 100%;
+    position: relative;
     margin-top: 3px;
+    color: #9aa0a6;
     height: 20px;
     width: 20px;
 }
@@ -286,7 +289,76 @@ a {
     width: 100%;
 }
 
+.search-form--container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
 
+.search-form--elem {
+    color: transparent;
+    flex: 100%;
+    white-space: pre;
+    height:34px;
+}
+
+.search-form__input {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    margin-top: -37px;
+    height: 34px;
+    font-size: 16px;
+}
+
+.search-form-outer {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: 5px;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.search-btn-container {
+    padding-top: 18px;
+    height: 70px;
+}
+
+.google-search-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4843;
+    margin: 11px 4xp;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lucky-search-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4843;
+    margin: 11px 4xp;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
 
 .section-bottom-half {
     flex-shrink: 0;
@@ -294,8 +366,95 @@ a {
     flex-grow: 1;
 }
 
+.footer--container {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    background: #f2f2f2;
+}
 
+.country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+}
 
+footer {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
+.footer-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ad-link {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    color: #70757a;
+}
+
+.business-link {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    color: #70757a;
+}
+
+.how-search-works-link {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    color: #70757a;
+}
+
+.privacy-link {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    color: #70757a;
+}
+
+.terms-link {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    color: #70757a;
+}
+
+.settings-link {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    color: #70757a;
+}
+
+.hidden {
+    height: 0;
+    overflow: hidden;
+}
+
+.hidden--container {
+    z-index: 1001;
+    position: absolute;
+    top: -1000px;
+}
 
 
